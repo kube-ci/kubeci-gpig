@@ -35,3 +35,8 @@ else
 fi
 
 curl -X POST -d "$(generate_post_data)" $API_URL
+
+# remove ok-to-test label
+
+API_URL=https://api.github.com/repos/${REPO}/issues/${PR_NUMBER}/labels/ok-to-test?access_token=${TOKEN}
+curl -X DELETE $API_URL
