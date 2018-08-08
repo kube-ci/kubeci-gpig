@@ -9,9 +9,9 @@ type testPair struct {
 
 var tests = []testPair{
 	{[]int{0, 1, 2}, 3},
-	{[]int{1, 2, 3}, 5}, // fail
+	//{[]int{1, 2, 3}, 5}, // fail
 	{[]int{2, 3, 4}, 9},
-	{[]int{1, 1, 1}, 2}, // fail
+	//{[]int{1, 1, 1}, 2}, // fail
 	{[]int{2, 2, 2}, 6},
 }
 
