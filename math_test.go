@@ -9,7 +9,7 @@ type testPair struct {
 
 var tests = []testPair{
 	{[]int{1, 2, 3}, 6}, // pass
-	{[]int{1, 2, 3}, 5}, // fail
+	// {[]int{1, 2, 3}, 5}, // fail
 }
 
 func TestSum(t *testing.T) {
