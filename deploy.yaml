@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubeci-gpig-deployment
+  labels:
+    app: kubeci-gpig
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kubeci-gpig
+  template:
+    metadata:
+      labels:
+        app: kubeci-gpig
+    spec:
+      containers:
+      - name: kubeci-gpig
+        image: kubeci/kubeci-gpig:kaniko
+        ports:
+        - containerPort: 9090
